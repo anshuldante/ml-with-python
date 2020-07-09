@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Fitness <= 35.5\ngini = 0.195\nsamples = 100000\nvalue = [89033, 10967]\nclass = 0", fillcolor="#e89151"] ;
+1 [label="gini = 0.0\nsamples = 35701\nvalue = [35701, 0]\nclass = 0", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Analytical <= 35.5\ngini = 0.283\nsamples = 64299\nvalue = [53332, 10967]\nclass = 0", fillcolor="#ea9b62"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 22998\nvalue = [22998, 0]\nclass = 0", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="Interview <= 35.5\ngini = 0.39\nsamples = 41301\nvalue = [30334, 10967]\nclass = 0", fillcolor="#eeaf81"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 14786\nvalue = [14786, 0]\nclass = 0", fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label="Physical <= 35.5\ngini = 0.485\nsamples = 26515\nvalue = [15548, 10967]\nclass = 0", fillcolor="#f7dac5"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 9469\nvalue = [9469, 0]\nclass = 0", fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label="Education <= 35.5\ngini = 0.459\nsamples = 17046\nvalue = [6079, 10967]\nclass = 1", fillcolor="#a7d3f3"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 6079\nvalue = [6079, 0]\nclass = 0", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 10967\nvalue = [0, 10967]\nclass = 1", fillcolor="#399de5"] ;
+8 -> 10 ;
+}
